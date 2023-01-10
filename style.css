@@ -41,9 +41,6 @@ img {
    height: auto;
    display: block;
 }
-a {
-   display: block;
-}
 
 /* ///////general styling/////// */
 /* ///////general styling/////// */
@@ -53,6 +50,7 @@ a {
    text-decoration: none;
    display: inline-block;
    cursor: pointer;
+   transition: all 1s;
 }
 
 .btn-starting {
@@ -60,17 +58,28 @@ a {
    color: #fff;
    padding: 0.7rem 2rem;
    border-radius: 100rem;
+   transition: all 1s;
 }
-
-.btn-footer {
-   background: var(--secondary-gradient);
+.btn-hero {
+   background: var(--primary-gradient);
+   transition: all 1s;
 }
 .btn-header {
    background-color: var(--blue);
 }
-.btn-hero {
+.btn-footer {
+   background: var(--secondary-gradient);
+}
+.btn-hero:hover {
+   background: var(--secondary-gradient);
+}
+.btn-header:hover {
    background: var(--primary-gradient);
 }
+.btn-footer:hover {
+   background: var(--primary-gradient);
+}
+
 /* layouts and related things to it */
 .flex-group {
    display: flex;
@@ -124,11 +133,6 @@ a {
    position: relative;
    padding: 2rem;
    border-radius: 1rem;
-
-   /* layout */
-   /* display: flex;
-   flex-direction: column;
-   align-content: space-between; */
 }
 .course-logo {
    position: absolute;
@@ -143,12 +147,14 @@ a {
    padding: 3rem;
 }
 
-/* .course {
-   display: grid;
-   grid-template-columns: 1fr;
-} */
 .course-link {
    background: var(--primary-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 1s;
+}
+.course-link:hover {
+   background: var(--secondary-gradient);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }

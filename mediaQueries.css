@@ -68,7 +68,7 @@
 
 @media (min-width: 989px) {
    html {
-      font-size: 70%;
+      font-size: 75%;
    }
    .img-header--tablet {
       display: none;
@@ -86,6 +86,14 @@
    }
    .img-header--mobile {
       display: none;
+   }
+   .hero-title {
+      font-size: 5.5rem;
+      letter-spacing: -1px;
+   }
+   .hero-description {
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
    }
    section {
       margin: 0 2rem;
@@ -109,4 +117,4 @@
       grid-template-rows: auto auto auto;
       align-items: end;
    }
-}
+   
