@@ -68,7 +68,7 @@
 
 @media (min-width: 989px) {
    html {
-      font-size: 66%;
+      font-size: 70%;
    }
    .img-header--tablet {
       display: none;
@@ -102,5 +102,11 @@
    .courses {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 1.5rem;
+   }
+   .course {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      align-items: end;
    }
 }

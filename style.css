@@ -41,6 +41,9 @@ img {
    height: auto;
    display: block;
 }
+a {
+   display: block;
+}
 
 /* ///////general styling/////// */
 /* ///////general styling/////// */
