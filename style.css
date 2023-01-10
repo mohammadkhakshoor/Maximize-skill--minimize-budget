@@ -1,0 +1,158 @@
+/* //////css ariables ////////// */
+:root {
+   --blue-hover: #666ca3;
+   --blue: #13183f;
+   --text-gray: #83869a;
+   --main-orange: #f74780;
+   --main-pink: #ffa7c3;
+   --white: #ffffff;
+   --primary-gradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+   --secondary-gradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+
+   --ff-accent: "Ubuntu", cursive;
+   --ff-base: "Poppins", sans-serif;
+}
+
+/* //////reset settings */
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   font-size: 62.5%;
+}
+body {
+   font-size: 1.6rem;
+   font-family: var(--ff-base);
+   background-color: #f0f0f0;
+   width: 100vw;
+   overflow-x: hidden;
+}
+h1,
+h2,
+h3 {
+   line-height: 1;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* ///////general styling/////// */
+/* ///////general styling/////// */
+
+/* bottons */
+.btn {
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+}
+
+.btn-starting {
+   font-size: 1.8rem;
+   color: #fff;
+   padding: 0.7rem 2rem;
+   border-radius: 100rem;
+}
+
+.btn-footer {
+   background: var(--secondary-gradient);
+}
+.btn-header {
+   background-color: var(--blue);
+}
+.btn-hero {
+   background: var(--primary-gradient);
+}
+/* layouts and related things to it */
+.flex-group {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.img-header--desktop,
+.img-header--tablet,
+.img-header--mobile {
+   display: none;
+}
+
+/* ////////helper class/////// */
+/* ////////helper class/////// */
+
+.flow-content > * + * {
+   margin-top: 2rem;
+}
+
+/* ////////srtylling///////// */
+/* ////////srtylling///////// */
+
+.img-header {
+   width: 130%;
+   position: relative;
+   top: -10rem;
+   right: -27rem;
+   transform: scale(1.47);
+}
+
+.hero-title {
+   font-family: var(--ff-accent);
+   font-size: 4rem;
+   margin-top: 0rem;
+}
+
+/* ////////////courses///////////// */
+/* ////////////courses///////////// */
+.courses {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 5rem;
+}
+.course {
+   background-color: #fff;
+   position: relative;
+   padding: 2rem;
+   border-radius: 1rem;
+
+   /* layout */
+   /* display: flex;
+   flex-direction: column;
+   align-content: space-between; */
+}
+.course-logo {
+   position: absolute;
+   left: 20px;
+   top: -2.5rem;
+   transform: scale(1.1);
+}
+.course:first-child {
+   background: var(--primary-gradient);
+   color: #fff;
+   font-size: 3rem;
+   padding: 3rem;
+}
+
+/* .course {
+   display: grid;
+   grid-template-columns: 1fr;
+} */
+.course-link {
+   background: var(--primary-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/*/////////// footer///////////// */
+/*/////////// footer///////////// */
+.footer {
+   padding: 0rem 0;
+   background-color: var(--blue);
+}
